@@ -1,0 +1,33 @@
+
+
+
+
+
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Hospital_System</display-name>
+  
+  
+  
+  
+  <servlet>
+        <servlet-name>UserRegister</servlet-name>
+        <servlet-class>com.user.servlet.UserRegister</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UserRegister</servlet-name>
+        <url-pattern>/user_register</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>AdminLogin</servlet-name>
+        <servlet-class>com.admin.sevlet.AdminLogin</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AdminLogin</servlet-name>
+        <url-pattern>/admin_login</url-pattern>
+    </servlet-mapping>
+</web-app>
+</element>

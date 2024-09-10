@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernateweb</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">8888</property>
+
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!-- Echo all executed SQL to stdout -->
+        <property name="hibernate.show_sql">true</property>
+        <!-- Current session context class -->
+        <property name="hibernate.current_session_context_class">thread</property>
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <!-- Mapping files -->
+        <!-- Add mapping files here if using XML mappings -->
+
+        <!-- Entity classes -->
+        <mapping class="com.hibernateweb.entity.User" />
+    </session-factory>
+</hibernate-configuration>

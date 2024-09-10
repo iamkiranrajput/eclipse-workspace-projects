@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<beans
+ xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p= "http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+ http://xmlns.jcp.org/xml/ns/javaee/beans_2_0.xsd
+ http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd" >
+ 
+ 
+ 	<!-- first way --> 
+ 
+	 <bean class="com.springcore.Student" name="student1">
+		<property name="studentId" value="234234"/>
+		
+		<property name="studentName">
+			<value>Karn Rajput</value>
+		</property> 
+		<property name="studentAddress">
+			<value>vaijapur</value> 
+		</property>
+	</bean>
+	
+		<!-- second way --> 
+	
+	 <bean class="com.springcore.Student" name="student2">
+		<property name="studentId" value="456" />
+		<property name="studentName">
+			<value>jay Rajput</value>
+		</property> 
+		<property name="studentAddress">
+			<value>sambhajinagar</value> 
+		</property>
+	</bean>
+	
+	<!-- third way --> 
+		 <bean class="com.springcore.Student" name="student3" 
+		 p:studentId="12121" 
+		 p:studentName="Ram Singh"
+		 p:studentAddress="Jaypur" />
+	
+</beans>

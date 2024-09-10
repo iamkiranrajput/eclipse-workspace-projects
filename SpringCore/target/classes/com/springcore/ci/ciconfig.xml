@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<beans
+ xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p= "http://www.springframework.org/schema/p"
+ xmlns:c= "http://www.springframework.org/schema/c"
+ 
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+ http://xmlns.jcp.org/xml/ns/javaee/beans_2_0.xsd
+ http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd" >
+ 
+ <!-- 
+ <bean class="com.springcore.ci.Certi" name="cer">
+	<constructor-arg value="Android using kotlin" />
+ </bean>
+  -->
+ 
+ <!-- 
+ <bean class="com.springcore.ci.Person" name="person">
+ 	<constructor-arg value="Kiran" />
+ 	<constructor-arg value="12" />
+ 	<constructor-arg ref="cer" />
+ 	 
+ </bean>
+  -->
+ 
+ 
+ 
+ <bean class="com.springcore.ci.Person" name="person" c:name="karn" c:personId="121212" c:certi-ref="cer">
+ 	<constructor-arg>
+ 		<list>
+ 	     <value>hello</value><value>world</value><value>How</value><value>Are</value><value>You</value>
+ 	</list>
+ 	
+ 	</constructor-arg>
+ 	
+ 
+ </bean>
+ <bean class="com.springcore.ci.Certi" name="cer" c:name="Python programming language" />
+
+ <bean class="com.springcore.ci.Addition" name="add">
+ <constructor-arg value="12.1" type="double" index="1"/>
+  <constructor-arg value="34.1" type="double" index="0"/>
+ 
+ </bean>
+</beans>

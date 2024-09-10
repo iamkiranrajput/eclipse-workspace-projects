@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- mark Datasource as Spring Bean DriverManagerDataSource -->
+<bean id = "ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<!--  setter injection bcoz corresponding setter methods are available in DMDS -->
+<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+<property name="url" value="jdbc:mysql://localhost:3306/learningSpring"/>
+<property name="username" value="root"/>
+<property name="password" value = "8888"/>
+</bean>
+
+<!--  configure DAO class as Spring Bean class -->
+<bean id="custDao"  class="com.ig.dao.CustDAOImpl"> 
+<!--  setter injection -->
+<constructor-arg name="ds" ref="ds"/>
+
+</bean>
+
+<!--  configure Service class as Spring Bean class -->
+<bean id="custService" class="com.ig.service.CustServicImpl">
+
+<constructor-arg name="dao" ref="custDao"/>
+
+</bean>
+
+<!--  configure controller class as Spring bean class -->
+
+<bean id="custController" class="com.ig.controller.CustController">
+<!-- setter injection  -->
+<constructor-arg name="service" ref="custService"/>
+</bean>
+
+
+</beans>

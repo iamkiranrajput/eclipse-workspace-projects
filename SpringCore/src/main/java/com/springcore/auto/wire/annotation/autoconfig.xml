@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<beans
+ xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p= "http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+ http://xmlns.jcp.org/xml/ns/javaee/beans_2_0.xsd
+ http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd" >
+ 
+ <context:annotation-config/>
+ 
+ 
+ 
+<bean class="com.springcore.auto.wire.annotation.Address" name="add1">
+	<constructor-arg name="streetkonasahai" value="vaijapur road" />
+		<constructor-arg name= "citikonsiahai" value="Sambhaji nagar" />
+	
+	
+	
+</bean>	 
+
+	
+
+<bean class="com.springcore.auto.wire.annotation.Employee" name="emp" autowire="constructor" >
+	
+</bean>
+	 
+</beans>
+	
+

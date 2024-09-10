@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<beans
+ xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p= "http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+ http://xmlns.jcp.org/xml/ns/javaee/beans_2_0.xsd
+ http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd" >
+ 
+ 
+ 
+ <bean name="Emp1" class="com.springcore.collections.Emp">
+ 	<property name="name" value="kishna" />
+ 	<property name="phones">
+ 		<list>
+ 			<value>7654332</value>
+ 			<value>56464</value>
+ 			<value>345</value>	
+ 			<null/>
+ 		</list>
+ 	</property>
+ 	<property name="address">
+ 		<set>
+ 			<value>Delhi</value>
+ 			<value>Vaijapur</value>
+ 			<value>Sambhajinagar</value>	
+ 			<null/>
+ 		</set>
+ 	</property>
+ 	<property name="courses">
+ 		<map>
+ 			<entry key="java" value="2month"/>
+ 			<entry key="python" value="3month"/>
+ 			<entry key="c" value="1month"/>
+ 		</map>
+ 	</property>
+ 	<property name="props">
+	 	<props>
+	 		<prop key="dbName">karndb</prop>
+	 		<prop key="host">localhost</prop>
+	 		<prop key="user">root</prop>
+	 		<prop key="password">8888</prop>
+	 	</props>
+ 	</property>
+ </bean>
+ 
+</beans>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/antlr4-runtime-4.10.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/byte-buddy-1.12.9.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/classmate-1.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/hibernate-commons-annotations-6.0.2.Final.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/hibernate-core-6.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/istack-commons-runtime-4.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/jakarta.activation-2.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/jakarta.inject-api-2.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/jakarta.persistence-api-3.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/jakarta.transaction-api-2.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/jakarta.xml.bind-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/jandex-2.4.2.Final.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/jaxb-core-3.0.2.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/jaxb-runtime-3.0.2.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/jboss-logging-3.4.3.Final.jar"/>
+	<classpathentry kind="lib" path="D:/java Resources/Hibernate_jar_files/txw2-3.0.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
